@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="client.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid chat">
+        <div class="row" style="height: 100%; margin: 0px;">
+            <div class="col-8" style="padding: 0px;">
+                <div class="row" style="margin: 0px; height: 95%; width:100%;">
+                    <div class="col-12 parent">
+                        <ul id="messages"></ul>
+                    </div>
+                </div>
+                
+                <div class="row" style="margin: 0; height: 5%; width: 100%;">
+                    <div class="col-12 parent" style="height: 100%;">
+                        <form>
+                            <input id="m" autocomplete="off" /><button>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="online-users" class="col-4">
+                <h5>Online Users</h5>
+                <ul id="users"></ul>
+            </div>
+        </div>
+       
+    </div>
+  </body>
+</html>
